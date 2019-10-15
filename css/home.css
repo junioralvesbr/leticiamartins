@@ -1,0 +1,48 @@
+.home {
+    height: 100vh;
+    background-image: url("../img/home2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #5b5963;
+    background-size: cover;
+    background-position: 50% 0px;
+    position: relative;
+}
+
+.home::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, #fa1f55, #fd735a 100%);
+    opacity: 0.5;
+}
+
+.home > .intro {
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    transform: translate(0%, -50%);
+    padding: 60px 30px;
+    margin: 0 auto;
+    max-width: 850px;
+    background-image: url("../img/pattern1.png");
+    background-size: 217px;
+    background-position: left center;
+    background-repeat: no-repeat;
+    z-index: 31;
+    text-align: left;
+}
+
+.home .hello, .home .who-created {
+    font-size: 16px;
+    text-transform: none;
+    margin: 15px 0;
+    font-weight: 200;
+}
+

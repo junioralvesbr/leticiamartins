@@ -1,0 +1,44 @@
+.header > .nav-bar {
+    box-sizing: border-box;
+    text-transform: uppercase;
+    width: 80vw;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header .action {
+    display: block;
+    text-decoration: none;
+    color: #5b5963;
+    letter-spacing: 3px;
+    padding: 15px;
+
+}
+
+.header .nav-header > .action {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.header .nav-menu > .list {
+    display: flex;
+}
+
+.header .nav-menu .action {
+    font-size: 11px; 
+    transition: all 0.4s ease-in-out 0s;
+}
+
+.header .nav-menu .action.-active {
+    background-color: rgba(253, 115, 90,1);
+    color: #fff;
+    outline: 0 none;
+}
+
+.header .nav-menu .action:hover {
+    background-color: rgba(253, 115, 90,1);
+    color: #fff;
+    outline: 0 none;
+}
