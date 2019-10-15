@@ -11,7 +11,7 @@
 .header .action {
     display: block;
     text-decoration: none;
-    color: #5b5963;
+    color: var(--color-first);
     letter-spacing: 3px;
     padding: 15px;
 
@@ -32,8 +32,8 @@
 }
 
 .header .nav-menu .action.-active {
-    background-color: rgba(253, 115, 90,1);
-    color: #fff;
+    background-color: var(--color-second);
+    color: var(--color-zero);
     outline: 0 none;
 }
 

@@ -3,7 +3,7 @@
     background-image: url("../img/home2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: #5b5963;
+    background-color: var(--color-first);
     background-size: cover;
     background-position: 50% 0px;
     position: relative;
@@ -22,6 +22,7 @@
 
 .home > .intro {
     box-sizing: border-box;
+    color: var(--color-zero);
     position: absolute;
     top: 50%;
     left: 0;
