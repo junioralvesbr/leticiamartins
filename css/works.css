@@ -91,7 +91,7 @@
 }
 
 .works > .portfolio-list > .portfolio-item {
-    display: inline-block;
+    display: block;
     list-style: outside none none;
     margin-bottom: 20px;
     padding: 0 10px;
@@ -106,4 +106,59 @@
     display: block;
     width: 100%;
     height: auto;
+}
+
+.works > .portfolio-list .figure {
+    position: relative;
+}
+
+.works > .portfolio-list .figcaption {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    background: linear-gradient(45deg, rgba(250,31,85,0.8) 0%, rgba(253,115,90,0.8) 100%);
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+}
+
+.works > .portfolio-list > .portfolio-item:hover .figcaption{
+    opacity: 1;
+    transform: scale(.97);
+}
+
+.works > .portfolio-list .action {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    opacity: 0;
+}
+
+.works > .portfolio-list .caption-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -20px;
+}
+
+.works > .portfolio-list .portfolio-item-title {
+    font-size: 16px;
+    color: var(--color-zero);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.works > .portfolio-list .portfolio-item-desc {
+    color: var(--color-fifth);
+    font-size: 13px;
+    font-style: italic;
 }
