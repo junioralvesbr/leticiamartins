@@ -1,0 +1,33 @@
+.module-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.module-header > .module-title {
+    position: relative;
+    color: var(--color-first);
+    margin: 0 0 30px;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.module-header > h2 {
+}
+
+.module-title > .sub-title {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -40px;
+    z-index: 0;
+    opacity: 0.05;
+}
+
+/* Line */
+.module-header > .module-line {
+    background-color: var(--color-thirth);
+    width: 55px;
+    height: 1px;
+    margin: 30px auto;
+}
