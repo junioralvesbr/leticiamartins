@@ -48,6 +48,8 @@
 
 .portfolio-works > .list {
     position: relative;
+    height: 1098px;
+    transition: height 250ms ease-out 0s;
 }
 
 .portfolio-works > .list > .item {
