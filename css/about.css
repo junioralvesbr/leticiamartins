@@ -12,9 +12,9 @@
 
 .about > .container > .description {
     box-sizing: border-box;
-    display: inline-block;
     width: 50%;
     height: 500px;
     float: right;
     padding: 100px 60px 50px;
 }
+
