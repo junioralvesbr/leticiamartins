@@ -13,6 +13,7 @@
 
 .module-title > .sub-title {
     font-size: 100px;
+    font-weight: 700;
     position: absolute;
     left: 0;
     right: 0;
@@ -26,5 +27,5 @@
     background-color: var(--color-thirth);
     width: 55px;
     height: 1px;
-    margin: 30px auto;
+    margin: 40px auto;
 }
