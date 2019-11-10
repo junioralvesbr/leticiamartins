@@ -1,3 +1,8 @@
+.about {
+    box-sizing: border-box;
+    min-height: 534px;
+}
+
 .about > .container > .image {
     box-sizing: border-box;
     background: url(../img/aboutme.jpg) no-repeat;
