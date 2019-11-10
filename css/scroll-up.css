@@ -1,0 +1,25 @@
+.scroll-up {
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    bottom: 1.8em;
+    right: 1.8em;
+}
+
+.scroll-up > .action {
+    background-color: var(--color-negative);
+    font-size: 14px;
+    color: var(--color-zero);
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 200ms linear, color 200ms linear;
+}
+
+.scroll-up > .action:hover {
+    background-color: var(--color-seventh);
+    color: var(--color-first);
+}
