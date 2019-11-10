@@ -1,0 +1,46 @@
+.footer {
+    box-sizing: border-box;
+    background-color: var(--color-sixth);
+    color: var(--color-zero);
+    height: 168px;
+    padding: 40px 0;
+}
+
+.footer > .container {
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer > .container .item {
+    display: inline-block;
+    margin: 5px;
+}
+
+.footer > .container .action {
+    display: inline-block;
+    border: 1px solid var(--color-zero);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    transition: border 200ms linear;
+}
+
+.footer > .container .action:hover {
+    border: 1px solid rgba(255,255,255, .5);
+}
+
+.footer > .container .fab {
+    color: var(--color-zero);
+    transition: color 200ms linear;
+}
+
+.footer > .container .action:hover > .fab{
+    color: rgba(255,255,255, .5);
+}
+
+.footer > .container .text-owner {
+    font-size: 12px;
+    margin-top: 20px;
+}
