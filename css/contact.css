@@ -1,0 +1,54 @@
+.contact {
+    box-sizing: border-box;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.contact > .container {
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contact .form {
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    width: 550px;
+}
+
+.contact .form .label {
+    margin-bottom: 5px;
+}
+
+.contact .form .input {
+    font-family: inherit;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    font-size: 12px;
+    min-height: 34px;
+    border: 1px solid #ddd;
+}
+
+.contact .form .inputMessage {
+    padding: 15px;
+}
+
+.contact .form .input::placeholder {
+    color: #999;
+    opacity: 1;
+}
+
+.contact .form .button {
+    font-family: inherit;
+    font-size: 14px;
+    text-transform: uppercase;
+    background-color: var(--color-second);
+    border-radius: 4px;
+    color: var(--color-zero);
+    padding: 8px 25px;
+    cursor: pointer;
+    border: 0;
+}
