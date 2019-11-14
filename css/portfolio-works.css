@@ -48,21 +48,24 @@
 
 .portfolio-works > .list {
     position: relative;
-    height: 1098px;
+    text-align: center;
+    height: 95vh;
     transition: height 250ms ease-out 0s;
 }
 
 .portfolio-works > .list > .item {
-    position: absolute;
+    position: relative;
+    display: inline-block;
     top: 0;
     left: 0;
-    width: 32.333%;
-    padding: 0 10px;
+    width: 31%;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-bottom: 20px;
 }
 
 /* Positions */
-.portfolio-works > .list > .item1 {
+/* .portfolio-works > .list > .item1 {
     transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1);
 }
 
@@ -84,7 +87,7 @@
 
 .portfolio-works > .list > .item6 {
     transform: translate3d(1268px, 549px, 0px) scale3d(1, 1, 1);
-}
+} */
 
 .portfolio-works > .list .image {
     width: 100%;
