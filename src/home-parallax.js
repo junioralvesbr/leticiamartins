@@ -3,9 +3,8 @@
 
 const parallax = () => {
     const $home = document.querySelector('.home');
-    let $position = window.pageYOffset;
-    $home.style.backgroundPositionY = `-${$position / 6}px`
-    console.log($position)
+    let $scroll = window.pageYOffset;
+    $home.style.backgroundPositionY = `-${$scroll / 6}px`
 };
 
 window.addEventListener('scroll', () => {

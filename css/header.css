@@ -1,3 +1,14 @@
+.header {
+    position: absolute;
+    width: 100%;
+    background-color: var(--color-zero);
+}
+.header.-active {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
 .header > .nav-bar {
     box-sizing: border-box;
     text-transform: uppercase;
@@ -20,25 +31,33 @@
 .header .nav-header > .action {
     font-size: 18px;
     font-weight: 700;
+    line-height: 20px;
 }
 
 .header .nav-menu > .list {
     display: flex;
+    height: 50px;
 }
 
-.header .nav-menu .action {
+.header .nav-menu .item {
+    box-sizing: border-box;
     font-size: 11px; 
+    color: var(--color-eighth);
     transition: all 0.4s ease-in-out 0s;
 }
 
-.header .nav-menu .action.-active {
+.header .nav-menu .item.-active {
     background-color: var(--color-second);
     color: var(--color-zero);
     outline: 0 none;
 }
 
-.header .nav-menu .action:hover {
-    background-color: rgba(253, 115, 90,1);
-    color: #fff;
+.header .nav-menu .item:hover {
+    background-color: var(--color-second);
+    color: var(--color-zero);
     outline: 0 none;
+}
+
+.header .nav-menu .action {
+    line-height: 20px;
 }
