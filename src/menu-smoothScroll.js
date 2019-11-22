@@ -4,6 +4,7 @@ const scrollToIdOnClick = (event) => {
     event.preventDefault();
     const $to = getScrollTopByHref(event.target) - 55;
     scrollToPosition($to);
+    activeMenu(event)
 };
 
 const getScrollTopByHref = ($element) => {
@@ -18,6 +19,18 @@ const scrollToPosition = ($to) => {
     });
 };
 
+const activeMenu = (event) => {
+    const $menu = document.querySelectorAll('.nav-menu .item');
+    const $activeMenu = event.path[1];
+
+    $menu.forEach(item => {
+        item.classList.remove('-active');
+    })
+
+    $activeMenu.classList.add('-active');
+}
+
 $menuItems.forEach(item => {
     item.addEventListener('click', scrollToIdOnClick);
 });
+
