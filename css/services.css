@@ -70,3 +70,19 @@
     font-weight: 400;
     line-height: 21px;
 }
+
+/* Animação */
+[data-anime] {
+    opacity: 1;
+    transition: 1s;
+}
+
+[data-anime="bottom"] {
+    opacity: 0;
+    transform: translate3d(0, 100px, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+}
