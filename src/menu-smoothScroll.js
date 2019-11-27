@@ -25,27 +25,28 @@ $menuItems.forEach(item => {
 });
 
 const addRemoveActive = (numberSection) => {
-    console.log(numberSection);
         $menu.forEach($item => $item.classList.remove('-active'))
         $menu[numberSection].classList.add('-active')
 }
 
 window.addEventListener('scroll', () => {
-    let scroll = (window.scrollY + 500)
+    const space = 100
+    let scroll = window.scrollY
     
-    if ((scroll > $section[0].offsetTop) && (scroll < $section[1].offsetTop)) {
-        addRemoveActive(0)
+    if (scroll > ($section[4].offsetTop - space)) {
+        addRemoveActive(4);
 
-    } else if ((scroll > $section[1].offsetTop) && (scroll < $section[2].offsetTop)) {
-        addRemoveActive(1)
+    } else if (scroll > ($section[3].offsetTop - 200)) {
+        addRemoveActive(3);
 
-    } else if ((scroll > $section[2].offsetTop) && (scroll < $section[3].offsetTop)) {
-        addRemoveActive(2)
+    } else if (scroll > ($section[2].offsetTop - space)) {
+        addRemoveActive(2);
 
-    } else if ((scroll > $section[3].offsetTop) && (scroll < $section[4].offsetTop)) {
-        addRemoveActive(3)
+    } else if (scroll > ($section[1].offsetTop - space)) {
+        addRemoveActive(1);
 
     } else {
-        addRemoveActive(4)
+        addRemoveActive(0);
+
     }
 })
