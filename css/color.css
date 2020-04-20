@@ -2,7 +2,7 @@
     --color-negative: #000;
     --color-negative-alpha: rgba(0,0,0,0.06);
     --color-zero: #fff;
-    --color-zero-light: rgba(255, 255, 255, .5)
+    --color-zero-light: rgba(255, 255, 255, .5);
     --color-first: #5b5963;
     --color-second: rgba(253, 115, 90, 1);
     --color-second-light: rgba(253, 115, 90, .8);
